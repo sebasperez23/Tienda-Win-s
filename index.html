@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Win’s</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="carousel.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Analytics Placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <!-- Meta Pixel Placeholder -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Mensaje animado -->
+  <div id="welcome-banner" class="welcome-banner text-center text-white py-2">
+    ✨ Bienvenido a Tienda Win’s — Calidad que enamora 💚
+  </div>
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="IMG/logo  15.png" alt="Logo Tienda Win’s"class="logo me-2">
+          Tienda Win’s
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" target="_blank" href="https://wa.me/c/573043792516">Catálogo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+          <button id="cart-btn" class="btn btn-outline-success position-relative">
+            <i class="bi bi-cart3"></i>
+            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio" class="pt-5 mt-5 text-center">
+    <!-- Carrusel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="IMG/30.png" class="d-block w-100"></div>
+        <div class="carousel-item"><img src="IMG/31.png" class="d-block w-100"></div>
+        <div class="carousel-item"><img src="IMG/4.png" class="d-block w-100"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Productos -->
+    <section id="productos" class="container py-5">
+      <h2 class="text-dark mb-4">Nuestros Productos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="IMG/16.png" class="product-img">
+          <h4 class="text-dark mt-2">Producto 1</h4>
+          <p>$35.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Producto 1" data-price="35000" data-img="IMG/16.png">Agregar al carrito</button>
+        </div>
+        <div class="col-md-4">
+          <img src="IMG/17.png" class="product-img">
+          <h4 class="text-dark mt-2">Producto 2</h4>
+          <p>$20.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Producto 2" data-price="20000" data-img="IMG/17.png">Agregar al carrito</button>
+        </div>
+        <div class="col-md-4">
+          <img src="IMG/18.png" class="product-img">
+          <h4 class="text-dark mt-2">Producto 3</h4>
+          <p>$15.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Producto 3" data-price="15000" data-img="IMG/18.png">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featurettes -->
+    <section class="featurette py-5 bg-light" id="featurette">
+      <div class="container d-flex align-items-center flex-wrap">
+        <div class="col-md-6">
+          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
+          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="IMG/10.png" class="img-fluid rounded shadow-lg">
+        </div>
+      </div>
+    </section>
+
+      <section class="featurette py-5 bg-light" id="featurette">
+      <div class="container d-flex align-items-center flex-wrap">
+        <div class="col-md-6 text-center">
+          <img src="IMG/23.png" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
+          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+        </div>
+        
+      </div>
+    </section>
+      <section class="featurette py-5 bg-light" id="featurette">
+      <div class="container d-flex align-items-center flex-wrap">
+        <div class="col-md-6">
+          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
+          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="IMG/19.png" class="img-fluid rounded shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="container py-5">
+      <h2 class="text-dark mb-4">Sobre Nosotros</h2>
+      <p class="text-dark">Somos una marca comprometida con ofrecer productos que reflejan amor, autenticidad y calidad. Nuestra misión es brindarte experiencias únicas a través de artículos cuidadosamente seleccionados. En Win’s, cada detalle cuenta.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container py-5">
+      <h2 class="text-dark mb-4">Contáctanos</h2>
+      <form>
+        <div class="mb-3"><input type="text" class="form-control" placeholder="Nombre"></div>
+        <div class="mb-3"><input type="email" class="form-control" placeholder="Correo electrónico"></div>
+        <div class="mb-3"><textarea class="form-control" placeholder="Mensaje"></textarea></div>
+        <a href="https://wa.me/573043792516" target="_blank" class="btn btn-success">Enviar por WhatsApp</a>
+      </form>
+    </section>
+
+    <footer class="text-center text-dark py-4 bg-light">
+      <p>&copy; 2025 Tienda Win’s</p>
+      <p>
+        <a href="https://www.instagram.com/ws.lovewins?igsh=MW5yd2VyOGpqOTkwcQ==" target="_blank" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/573043792516" target="_blank" class="me-3 text-dark"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" class="me-3 text-dark"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="bi bi-facebook"></i></a>
+      </p>
+    </footer>
+
+    <a href="https://wa.me/573043792516" class="whatsapp-float" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  </main>
+
+  <div id="cart-panel" class="cart-panel">
+    <div class="cart-header d-flex justify-content-between align-items-center">
+      <h5>Tu carrito</h5>
+      <button class="btn btn-sm btn-danger" id="close-cart"><i class="bi bi-x"></i></button>
+    </div>
+    <div id="cart-items" class="cart-items mt-3"></div>
+    <div class="cart-footer mt-auto">
+      <p class="text-end fw-bold" id="cart-total">Total: $0</p>
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-secondary btn-sm" id="clear-cart">Vaciar</button>
+        <button class="btn btn-success btn-sm" id="checkout">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
