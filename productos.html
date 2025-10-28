@@ -51,11 +51,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Navidad.html">Navidad</a></li>
             <li class="nav-item"><a class="nav-link" target="_blank" href="https://wa.me/c/573043792516">Catálogo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
           <button id="cart-btn" class="btn btn-outline-success position-relative">
             <i class="bi bi-cart3"></i>
@@ -67,81 +65,61 @@
   </header>
 
   <main id="inicio" class="pt-5 mt-5 text-center">
-    <!-- Carrusel -->
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active"><img src="IMG/30.png" class="d-block w-100"></div>
-        <div class="carousel-item"><img src="IMG/31.png" class="d-block w-100"></div>
-        <div class="carousel-item"><img src="IMG/4.png" class="d-block w-100"></div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-    <!-- Featurettes -->
-    <section class="featurette py-5 bg-light" id="featurette">
-      <div class="container d-flex align-items-center flex-wrap">
-        <div class="col-md-6">
-          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
-          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+    <!-- Productos -->
+    <section id="productos" class="container py-5">
+      <h2 class="text-dark mb-4">Nuestros Productos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img src="IMG/32.png" class="product-img">
+          <h4 class="text-dark mt-2">Vela Aromática floral</h4>
+          <p>$35.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Vela Aromática floral" data-price="35000" data-img="IMG/32.png">Agregar al carrito</button>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="IMG/10.png" class="img-fluid rounded shadow-lg">
+        <div class="col-md-4">
+          <img src="IMG/17.png" class="product-img">
+          <h4 class="text-dark mt-2">Vela Aromática de Gel</h4>
+          <p>$20.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Vela Aromática de Gel" data-price="20000" data-img="IMG/17.png">Agregar al carrito</button>
         </div>
-      </div>
-    </section>
-
-      <section class="featurette py-5 bg-light" id="featurette">
-      <div class="container d-flex align-items-center flex-wrap">
-        <div class="col-md-6 text-center">
-          <img src="IMG/23.png" class="img-fluid rounded shadow-lg">
+        <div class="col-md-4">
+          <img src="IMG/18.png" class="product-img">
+          <h4 class="text-dark mt-2">Vela Aromática de Coco</h4>
+          <p>$12.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Vela Aromática de Coco" data-price="15000" data-img="IMG/18.png">Agregar al carrito</button>
         </div>
-        <div class="col-md-6">
-          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
-          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+        <div class="col-md-4">
+          <img src="IMG/33.png" class="product-img">
+          <h4 class="text-dark mt-2">Margarita flotante</h4>
+          <p>$5.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Margarita flotante" data-price="5000" data-img="IMG/33.png">Agregar al carrito</button>
         </div>
-        
-      </div>
-    </section>
-      <section class="featurette py-5 bg-light" id="featurette">
-      <div class="container d-flex align-items-center flex-wrap">
-        <div class="col-md-6">
-          <h2 class="fw-bold text-dark">Calidad y estilo que enamoran</h2>
-          <p class="text-dark">En Tienda Win’s, creemos en combinar diseño, comodidad y personalidad en cada producto. Trabajamos con materiales de alta calidad y diseños modernos para que encuentres exactamente lo que buscas.</p>
+        <div class="col-md-4">
+          <img src="IMG/34.png" class="product-img">
+          <h4 class="text-dark mt-2">Velas corazones</h4>
+          <p>$20.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Velas corazones" data-price="20000" data-img="IMG/34.png">Agregar al carrito</button>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="IMG/19.png" class="img-fluid rounded shadow-lg">
+        <div class="col-md-4">
+          <img src="IMG/35.png" class="product-img">
+          <h4 class="text-dark mt-2">Recordatorio primera comunión</h4>
+          <p>$15.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Recordatorio primera comunión" data-price="15000" data-img="IMG/35.png">Agregar al carrito</button>
         </div>
+        <div class="col-md-4">
+          <img src="IMG/36.png" class="product-img">
+          <h4 class="text-dark mt-2">Vela personalizada</h4>
+          <p>$25.000</p>
+          <button class="btn btn-success add-to-cart" data-name="Vela personalizada" data-price="25000" data-img="IMG/36.png">Agregar al carrito</button>
+        </div>       
       </div>
     </section>
-
-    <!-- Nosotros -->
-    <section id="nosotros" class="container py-5">
-      <h2 class="text-dark mb-4">Sobre Nosotros</h2>
-      <p class="text-dark">Somos una marca comprometida con ofrecer productos que reflejan amor, autenticidad y calidad. Nuestra misión es brindarte experiencias únicas a través de artículos cuidadosamente seleccionados. En Win’s, cada detalle cuenta.</p>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="container py-5">
-      <h2 class="text-dark mb-4">Contáctanos</h2>
-      <form>
-        <div class="mb-3"><input type="text" class="form-control" placeholder="Nombre"></div>
-        <div class="mb-3"><input type="email" class="form-control" placeholder="Correo electrónico"></div>
-        <div class="mb-3"><textarea class="form-control" placeholder="Mensaje"></textarea></div>
-        <a href="https://wa.me/573043792516" target="_blank" class="btn btn-success">Enviar por WhatsApp</a>
-      </form>
-    </section>
-
     <footer class="footer-custom">
       <p>&copy; 2025 Tienda Win’s | Todos los derechos reservados</p>
       <p>
-        Síguenos en <p></p>
-
         <a href="https://www.instagram.com/ws.lovewins?igsh=MW5yd2VyOGpqOTkwcQ==" target="_blank" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
         <a href="https://wa.me/573043792516" target="_blank" class="me-3 text-dark"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" class="me-3 text-dark"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="bi bi-facebook"></i></a>
       </p>
     </footer>
 

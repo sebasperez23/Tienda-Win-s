@@ -1,11 +1,36 @@
-body{background-color:#1abc9c;color:#2c3e50;font-family:'Montserrat',sans-serif;}
+body{background-color:beige;color:#2c3e50;font-family:'Montserrat',sans-serif;}
 .logo{height:45px;width: auto;;border-radius:8px;}
 .product-img{width:100%;max-width:320px;height:320px;object-fit:cover;border-radius:15px;box-shadow:0 6px 18px rgba(0,0,0,0.25);}
-.welcome-banner{background-color:#111;animation:fadeInDown 1s ease;position:relative;z-index:1050;}
+.welcome-banner{background-color:#af04f8;animation:fadeInDown 1s ease;position:relative;z-index:1050;}
 @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
-.navbar-dark .navbar-nav .nav-link.active{color:#25d366;}
-.whatsapp-float{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 8px 20px rgba(37,211,102,0.35);z-index:9999;transition:transform .15s ease;}
+.navbar-dark .navbar-nav .nav-link.active{color:#af04f8;}
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:hsl(123, 97%, 49%);
+color:#af04f8;width:56px;
+height:56px;
+border-radius:50%;
+display:flex;align-items:center;
+justify-content:center;
+font-size:1.6rem;
+box-shadow:0 8px 20px #af04f8;
+z-index:9999;
+transition:transform .15s ease;}
 .whatsapp-float:hover{transform:translateY(-4px);}
-.cart-panel{position:fixed;top:0;right:-360px;width:360px;height:100vh;background:#111;color:#fff;padding:1rem;box-shadow:-2px 0 15px rgba(0,0,0,0.4);transition:right .3s ease-in-out;z-index:10000;display:flex;flex-direction:column;}
+.cart-panel{
+  position:fixed;
+  top:0;right:-360px;
+  width:360px;
+  height:100vh;
+  background:#111;
+  color:#af04f8;
+  padding:1rem;
+  box-shadow:-2px 0 15px rgba(0,0,0,0.4);
+  transition:right .3s ease-in-out;
+  z-index:10000;
+  display:flex;
+  flex-direction:column;}
 .cart-panel.open{right:0;}
 .cart-thumb{width:60px;height:60px;border-radius:8px;object-fit:cover;}

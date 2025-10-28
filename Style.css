@@ -1,0 +1,276 @@
+/* ======= CORRECCIÓN DE COLOR PARA FEATURETTES ======= */
+body {
+  background-color: #8ECCD1 !important;
+  color: #2c3e50;
+}
+
+/* Forzar el fondo beige en las secciones Featurette */
+.featurette,
+.row.featurette,
+.container.featurette,
+.container-fluid.featurette {
+  background-color: #8ECCD1 !important;
+  color: #2c3e50 !important;
+  padding: 60px 0;
+}
+
+/* Asegura que las columnas internas no hereden fondo blanco */
+.featurette .col-md-7,
+.featurette .col-md-5 {
+  background-color: transparent !important;
+}
+
+footer {
+  background-color:#1b5a5a !important;
+  color: white !important;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: white !important;
+  text-decoration: none;
+}
+.btn{
+    background-color:#137263 !important;
+    color: white !important;
+    border: none;
+}
+.btn:hover {
+    background-color: hsl(162, 94%, 48%) !important;
+    color: black !important;
+}
+.nav-item:hover {
+    background-color: #030909 !important;
+    color: black !important;
+
+  
+}
+.me-2{
+   width: 100px !important;
+    height: 100px !important;
+}
+
+/* === NAVBAR: alinear menú con el carrito === */
+.navbar-collapse {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important; /* alinea todo a la derecha */
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important; /* menú horizontal */
+  margin-right: 10px !important; /* espacio entre menú y carrito */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px; /* separación entre los enlaces */
+}
+
+.navbar .nav-link {
+  color: white !important; /* color igual al body */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #8ECCD1 !important; /* un tono más oscuro al pasar el mouse */
+}
+
+/* --- Opcional: ajustes del carrito --- */
+.navbar .nav-link.position-relative {
+  font-size: 1.3rem; /* tamaño del ícono */
+  padding-right: 15px;
+}
+
+.navbar .badge {
+  font-size: 0.65rem;
+  transform: translate(-10%, -30%);
+}
+
+.Tex-1{
+  display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    color: #8ECCD1 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);}
+.Tex-1:hover{
+    color: #af04f8 !important;
+    text-decoration: none;}
+
+    /* === Navbar Tienda Win’s === */
+.navbar {
+  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  z-index: 1000;
+}
+
+/* Contenedor principal */
+.navbar .container-fluid {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative;
+}
+
+/* --- Logo --- */
+.navbar-brand .logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* --- Título centrado --- */
+.Tex-1 {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  color: beige;                /* color del texto sobre el fondo oscuro */
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  z-index: 10;
+}
+
+/* --- Menú y carrito --- */
+.navbar-collapse {
+  margin-left: auto !important;
+}
+
+/* --- Enlaces del menú --- */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #af04f8 !important;
+}
+
+
+/* --- RESPONSIVE: Ajuste del título en pantallas pequeñas --- */
+@media (max-width: 767px) {
+  .Tex-1 {
+    position: relative;
+    left: auto;
+    transform: none;
+    margin: 10px auto 0;
+    text-align: center;
+    display: block;
+  }
+
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+/* ====== ❄️ NIEVE CAYENDO ====== */
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.snowflake {
+  position: absolute;
+  color: white;
+  user-select: none;
+  animation: fall linear forwards;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.8));
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+
+/* ====== 🔥 LUCES NAVIDEÑAS ====== */
+.christmas-flames {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.top-flames {
+  top: 0;
+}
+
+.bottom-flames {
+  bottom: 0;
+  align-items: flex-start;
+}
+
+/* Base de cada fueguito */
+.christmas-flames span {
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  animation: flameFlicker 1.5s infinite alternate,
+             flameColor 4s infinite alternate ease-in-out;
+  box-shadow: 0 0 12px 4px rgba(255, 180, 0, 0.8);
+}
+
+/* Parpadeo */
+@keyframes flameFlicker {
+  0% { transform: scaleY(1); opacity: 0.9; filter: blur(1px); }
+  50% { transform: scaleY(1.2); opacity: 1; filter: blur(0.5px); }
+  100% { transform: scaleY(0.8); opacity: 0.7; filter: blur(2px); }
+}
+
+/* Cambio de color: dorado → rojo → verde → dorado */
+@keyframes flameColor {
+  0% {
+    background: radial-gradient(ellipse at bottom, #ffb300 0%, #ff3d00 70%, transparent 100%);
+    box-shadow: 0 0 10px 3px #ffb300;
+  }
+  33% {
+    background: radial-gradient(ellipse at bottom, #ff0000 0%, #b30000 70%, transparent 100%);
+    box-shadow: 0 0 12px 3px #ff3d00;
+  }
+  66% {
+    background: radial-gradient(ellipse at bottom, #00ff40 0%, #008000 70%, transparent 100%);
+    box-shadow: 0 0 10px 3px #00ff40;
+  }
+  100% {
+    background: radial-gradient(ellipse at bottom, #ffb300 0%, #ff3d00 70%, transparent 100%);
+    box-shadow: 0 0 12px 3px #ffb300;
+  }
+}
+
+/* Diferentes ritmos */
+.christmas-flames span:nth-child(odd) {
+  animation-duration: 1.3s, 4.5s;
+}
+.christmas-flames span:nth-child(even) {
+  animation-duration: 1.8s, 5s;
+  animation-delay: 0.3s;
+}
+
