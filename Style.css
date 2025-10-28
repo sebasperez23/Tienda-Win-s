@@ -50,62 +50,7 @@ footer a {
     height: 100px !important;
 }
 
-/* === NAVBAR: alinear menú con el carrito === */
-.navbar-collapse {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important; /* alinea todo a la derecha */
-}
-
-.navbar-nav {
-  display: flex !important;
-  flex-direction: row !important; /* menú horizontal */
-  margin-right: 10px !important; /* espacio entre menú y carrito */
-}
-
-.navbar-nav .nav-item {
-  margin-right: 15px; /* separación entre los enlaces */
-}
-
-.navbar .nav-link {
-  color: white !important; /* color igual al body */
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-  color: #8ECCD1 !important; /* un tono más oscuro al pasar el mouse */
-}
-
-/* --- Opcional: ajustes del carrito --- */
-.navbar .nav-link.position-relative {
-  font-size: 1.3rem; /* tamaño del ícono */
-  padding-right: 15px;
-}
-
-.navbar .badge {
-  font-size: 0.65rem;
-  transform: translate(-10%, -30%);
-}
-
-.Tex-1{
-  display: flex;
-    align-items:flex-start;
-    justify-content: center;
-    color: #8ECCD1 !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.0rem;
-    font-weight: bold;
-    margin-left: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);}
-.Tex-1:hover{
-    color: #af04f8 !important;
-    text-decoration: none;}
-
-    /* === Navbar Tienda Win’s === */
+/* === NAVBAR TIENDA WIN’S === */
 .navbar {
   position: relative;
   display: flex !important;
@@ -114,7 +59,6 @@ footer a {
   z-index: 1000;
 }
 
-/* Contenedor principal */
 .navbar .container-fluid {
   display: flex !important;
   align-items: center !important;
@@ -133,20 +77,19 @@ footer a {
 /* --- Título centrado --- */
 .Tex-1 {
   position: absolute;
-  left: 35%;
+  left: 50%;
   transform: translateX(-50%);
-  color: beige;                /* color del texto sobre el fondo oscuro */
+  color: beige;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0;
-  letter-spacing: 1px;
   text-align: center;
   z-index: 10;
 }
 
-/* --- Menú y carrito --- */
+/* --- Menú (Bootstrap controla el display) --- */
 .navbar-collapse {
-  margin-left: auto !important;
+  justify-content: flex-end;
 }
 
 /* --- Enlaces del menú --- */
@@ -160,16 +103,27 @@ footer a {
   color: #af04f8 !important;
 }
 
+/* --- Botón del carrito --- */
+#cart-btn {
+  border-color: beige !important;
+  color: beige !important;
+  transition: all 0.3s ease;
+}
 
-/* --- RESPONSIVE: Ajuste del título en pantallas pequeñas --- */
+#cart-btn:hover {
+  background-color: beige !important;
+  color: #2c3e50 !important;
+}
+
+/* --- RESPONSIVE: Celulares (≤767 px) --- */
 @media (max-width: 767px) {
   .Tex-1 {
     position: relative;
     left: auto;
     transform: none;
-    margin: 10px auto 0;
+    margin: 10px auto;
     text-align: center;
-    display: block;
+    z-index: 1;
   }
 
   .navbar .container-fluid {
@@ -178,7 +132,38 @@ footer a {
 
   .navbar-collapse {
     justify-content: center !important;
-    width: 100%;
+  }
+
+  .navbar-brand .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* --- RESPONSIVE: Tablets (768 px – 992 px) --- */
+@media (min-width: 768px) and (max-width: 992px) {
+  .Tex-1 {
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-brand .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+
+  #cart-btn {
+    padding: 4px 8px;
+    font-size: 0.9rem;
   }
 }
 /* ====== ❄️ NIEVE CAYENDO ====== */
