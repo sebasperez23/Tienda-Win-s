@@ -48,3 +48,5 @@ document.getElementById('checkout').onclick=()=>{
 cartBtn.onclick=()=>cartPanel.classList.add('open');
 closeCart.onclick=()=>cartPanel.classList.remove('open');
 updateCart();
+
+
